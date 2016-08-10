@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/* CSS Document */
+.heading h1{
+	margin-left: 20%;
+}
+.form_info{
+	margin-left: 5%;	
+}
+p{
+	color:green;
+	font-size: 20px;
+	font-family: Times;
+}
+body{
+background-image: url(../images/12.jpg);
+}
+.background{
+	background-color: white;
+	width: 40%;
+	margin-left: 30%;
+	border: 3px solid green;
+    height: 3000px;
+}
+input[type="text"], input[type="password"], input[type="Email"],input[type="date"],input[type="number"]{
+	width: 70%;
+	padding: 12px 20px;
+	border: 2px solid grey;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="Email"]:focus,input[type="date"]:focus,input[type="number"]:focus{
+	background-color: lightblue;
+
+}
+input [type="reset"]{
+    }
+#reset{
+    margin-top: 10%;    
+    width: 20%;
+    height: 300px;
+}
+#pic_1{
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+#pic_2{
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 20%;
+    padding-bottom: 10%;
+}
+.content{
+    margin-left: 10%;
+    color:green;
+    font-size: 20px;
+    font-family: Times;
+	}
+.drop_moreinfo{
+  
+      color:red;
+    
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.btn_choose {
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+    background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+    background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+    background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+    background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+    background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+    background-color:#f9f9f9;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+}
+.btn_choose:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+    background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+    background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+    background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+    background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+    background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+    background-color:#e9e9e9;
+}
+.btn_choose:active {
+    position:relative;
+    top:1px;
+}
+.btn{
+    width: 100%;
+}
+#btn_reset{
+    margin-left: 5%;
+    background-color: green;
+   }
+.background_color_0{
+background-color: #e9e9e9;
+width: 105%;
+margin-left: -5%;
+padding-bottom: 5%;
+}
+.background_1{
+background-color: white;
+width: 105%;
+margin-left: -5%;
+}
+.bk_color{
+    background-color: #e9e9e9;
+    padding-top: 15%;
+    padding-bottom: 2%;
+    margin-top: -10%;
+}
+#word{
+    margin-top: -10%;
+    margin-left: 40%;
+}
+#word_url{
+    margin-left: 25%;
+}
+#music_emb{
+    width: 90%;
+}
+#error_name{
+display: none;
+}
+#error_email{
+display: none;
+}
+#error_pwd{
+display: none;
+}
+#error_sex{
+    display: none;
+}
+#yes{
+    display: none;
+}
+#no{
+    display: none;
+}
+#yes1{
+    display: none;
+}
+#no1{
+    display: none;
+}
+#yes2{
+    display: none;
+}
+#no2{
+    display: none;
+}
+#yes3{
+    display: none;
+}
+#no3{
+    display: none;
+}
+

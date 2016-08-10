@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+   		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Form Creation</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class="background">
+		<div class="heading">
+		<h1>Customer Feedback</h1>
+		</div>
+		<form class="form_info" id="my_form" method="get" autocomplete="on" required="required">
+		<p>Name:</p>
+		<input class="input_info" id="name" type="text" name="name" placeholder="input your name"></input>
+		<img id="yes" src="images/yes.png">
+		<img id="no" src="images/no.png">
+		<p id="error_name" style="color:red">please input correct name</p>
+
+
+		<p>Customer Email:</p>
+		<input class="input_info" id="email" type="email" name="email" placeholder="input your Email" autocomplete="on" minlength="2" required></input>
+		<img id="yes1" src="images/yes.png">
+		<img id="no1" src="images/no.png">
+		<p   id="error_email" style="color:red">please input correct Email address</p>
+		
+
+		<p>Customer Password:</p>
+		<input class="input_info" id="pwd" type="password" name="passwd" placeholder="input your password" required></input>
+		<img id="yes2" src="images/yes.png">
+		<img id="no2" src="images/no.png">
+		<p id="error_pwd" style="color:red">please input correct Email address</p>
+
+		<p>Customer Gender<p>
+		<input class="input_info" id="sex" name="sex" id="sex_male" value="male" type="radio" required>male</br></input>
+		<input class="input_info" name="sex" id="sex_female" value="female" type="radio">female<br/></input>
+		<img id="yes3" src="images/yes.png">
+		<img id="no3" src="images/no.png">
+		<p id="error_sex" style="color:red">please input correct Email address</p>
+		<p>Now choose the your shoes picture</p>
+		<input type="file" name="pic" accept="image/*">
+		<p>Select the date that you bought the shoes</p>
+		<input class="input_info" type="date" name="user_date" placeholder="select the date" required></input>
+		<p>Select your shoes size</p>
+		<input class="input_info" type="text" name="shoees_size" list="size"placeholder="select your size" required></input>
+		<datalist id="size">
+   		<option value="35"><option value="35.5"><option value="36">
+   		<option value="36.5"><option value="37"><option value="37.5">
+   		<option value="38"><option value="38.5"><option value="39.5">
+		<option value="40"><option value="40.5"><option value="41"><option value="41.5"><option value="42"><option value="42.5"><option value="43"><option value="43.5"><option value="44"><option value="44.5"><option value="45">
+		</datalist>
+		<p>What is the color of the shoes?</p>
+		<input class="input_info" name="color" type="color"></input>
+		<p>Tell us the number of shoes you are returning(from 1 to 10):</p>
+		<input class="input_info" type="number" name="return_num" min="1" max="10" required></input>
+		<p>Want to listen to a good song so that you can relax a bit?</p>
+		<div id="music_emb">
+		<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/253045600&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		</div>
+		<embed flashvars="audioUrl=http%3A%2F%2Fsites.google.com%2Fsite%2Fannuairevin%2Ffiles%2Fcarl_orff_carmina_o_fortuna.mp3" height="27" quality="best" src="http://dl.dropbox.com/u/17757917/3523697345-audio-player.swf" type="application/x-shockwave-flash" width="400"></embed> 
+		<embed type="application/x-shockwave-flash" src="http://www.google.com/reader/ui/3523697345-audio-player.swf" quality="best" flashvars="audioUrl=MP3link" width="50" height="27"></embed>
+
+		<p>How satisfy are you with our customer service?</p>
+		<output name="output" id="serviceoutputId">1</output>
+		<input class="input_info" type="range" name="range" min="1" max="5"></input>
+		<output name="output" id="serviceoutputId">5</output>
+		<div class="background_color_0"> <img id="pic_1" src="images/2.jpg">
+			<div class="content">
+	Do You wanna Know more Information?<div class="dropdown"><span style="color:red"> &nbsp MoreInfo</span>
+				  		 	<div class="dropdown-content">
+                            <a href="http://www.nike.com">About Us</a>
+                            <a href="">Our Story</a>
+                            <a href="">Testimonials</a>
+                            <a href="">Customer Service</a>
+                       		 </div></div>                   
+    </div>
+		</div>
+	</br>
+
+		<div class="background_1"><img id="pic_2" src="images/3.jpg">
+		<div class="bk_color">
+		<p id="word">price: <span style="color:red">100$</span></p>
+		<p id="word_url">please click <a href="www.nike.com">here</a> for purchasing it.
+		</p></div></div>
+		<p>Let's play a video for relax!</p> 
+		<iframe width="350" height="300" src="https://www.youtube.com/embed/Iy1rumvo9xc?list=PL772A16A270BC0335" frameborder="0" allowfullscreen></iframe>
+		<p>Now please drop off some <span style="color:red">comments</span> before leaving!</p> 
+	    <textarea rows="8" cols="70" name="comment" form="form_info">
+		</textarea>
+		<div class="btn"> 
+		<button class="btn_choose" onclick="mysubmit()">Submit</button>
+		<button class="btn_choose" id="btn_reset" type="reset">Reset</button>
+		</div>
+	    	</form>
+		</div>	 	
+
+
+	<script type="text/javascript"></script>
+
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery-ui-1.11.4.min.js"></script>
+    	<script src="js/form.js"></script>
+	</body>
+</html>
